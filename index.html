@@ -11,6 +11,20 @@
 </head>
 <body>
 
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__brand">
+        <img src="assets/images/logo.png" alt="Euregence logo" />
+        <span class="navbar__title">Euregence</span>
+      </a>
+      <div class="navbar__links">
+        <a href="#story" class="navbar__link">About</a>
+        <a href="#gallery" class="navbar__link">Works</a>
+        <a href="#cta" class="navbar__link navbar__link--cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
 
     <!-- ============================================================
@@ -19,24 +33,15 @@
     <header class="hero" id="hero">
       <div class="hero__inner">
 
-        <div class="hero__logo-wrap">
-          <img
-            src="assets/images/logo.png"
-            alt="Euregence — Eureka Intelligence"
-            class="hero__logo"
-            width="220"
-            height="auto"
-          />
-        </div>
-
         <div class="hero__content">
           <h1 class="hero__headline">Science isn&rsquo;t studied. <em>It&rsquo;s experienced.</em></h1>
           <p class="hero__subheading">
             We turn physics and chemistry into live, unforgettable experiences.
           </p>
-          <div class="hero__cta-group">
-            <a href="#cta" class="btn btn--primary">Book a Session</a>
-            <a href="#gallery" class="btn btn--secondary">Contact Us</a>
+          <div class="hero__tags">
+            <span>Live Demonstrations</span>
+            <span>Live Participation</span>
+            <span>Visual Learning</span>
           </div>
         </div>
 
@@ -44,148 +49,56 @@
     </header>
 
     <!-- ============================================================
-         STORY SECTION (SPLIT LAYOUT)
+         STORY CARDS SECTION
     ============================================================ -->
-    <section class="story" id="story" aria-label="Our Story">
+    <section class="story-cards" id="story" aria-label="Our Story">
       <div class="container">
-        <div class="story__grid">
 
-          <!-- LEFT: Brand visual block -->
-          <aside class="story__visual">
-            <div class="story__brand-card">
-              <span class="story__brand-badge">01</span>
-              <div class="story__brand-identity">
-                <p class="story__brand-name">Euregence</p>
-                <p class="story__brand-tagline">Eureka Intelligence</p>
-              </div>
-              <div class="story__brand-divider" aria-hidden="true"></div>
-              <p class="story__brand-desc">Turning abstract science into hands-on, unforgettable experiences for middle school students.</p>
-              <ul class="story__stat-list" role="list">
-                <li class="story__stat">
-                  <span class="story__stat-value">₹20</span>
-                  <span class="story__stat-label">Per Student</span>
-                </li>
-                <li class="story__stat">
-                  <span class="story__stat-value">100%</span>
-                  <span class="story__stat-label">Hands-on</span>
-                </li>
-                <li class="story__stat">
-                  <span class="story__stat-value">Live</span>
-                  <span class="story__stat-label">Demos</span>
-                </li>
-              </ul>
-            </div>
-          </aside>
-
-          <!-- RIGHT: Structured content -->
-          <div class="story__content">
-
-            <!-- Who We Are -->
-            <div class="story__block fade-in">
-              <span class="story__label">Who We Are</span>
-              <h2 class="story__heading">Passionate students.<br>Science communicators.</h2>
-              <p class="story__text">As engineering and science students, we know mastering physics and chemistry requires more than memorizing formulas. We transform middle school education by turning abstract concepts into hands-on, unforgettable visual experiences.</p>
-            </div>
-
-            <div class="story__divider" aria-hidden="true"></div>
-
-            <!-- Why This Idea -->
-            <div class="story__block fade-in">
-              <span class="story__label">Why This Idea</span>
-              <h3 class="story__subheading">Science should feel like magic — not a textbook.</h3>
-              <p class="story__text">Students should enjoy, visualize, and truly understand science. We built Euregence because we believe every 12-year-old deserves that moment of wonder.</p>
-            </div>
-
-            <div class="story__divider" aria-hidden="true"></div>
-
-            <!-- The Problem -->
-            <div class="story__block fade-in">
-              <span class="story__label">The Problem</span>
-              <h3 class="story__subheading">They don&rsquo;t dislike science. They struggle to understand it.</h3>
-              <p class="story__text">Research shows visual learning significantly improves comprehension. Traditional classrooms rely on memorization — we fix that.</p>
-            </div>
-
-            <div class="story__divider" aria-hidden="true"></div>
-
-            <!-- How It Works -->
-            <div class="story__block fade-in">
-              <span class="story__label">How the Experience Works</span>
-              <h3 class="story__subheading">See it. Do it. Understand it.</h3>
-              <ul class="story__bullets" role="list">
-                <li class="story__bullet">
-                  <span class="story__bullet-icon" aria-hidden="true">⚡</span>
-                  <span>High-energy demos — color changes, safe fire effects, material science phenomena that feel like magic.</span>
-                </li>
-                <li class="story__bullet">
-                  <span class="story__bullet-icon" aria-hidden="true">🧪</span>
-                  <span>Every student runs a DIY experiment — learning by doing, not just watching.</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="story__divider" aria-hidden="true"></div>
-
-            <!-- Why Choose Us -->
-            <div class="story__block fade-in">
-              <span class="story__label">Why Choose Us</span>
-              <h3 class="story__subheading">Deeper understanding at ₹20 per student.</h3>
-              <p class="story__text">We&rsquo;re not just running experiments — we&rsquo;re sparking lifelong curiosity. Science is something to experience, not just study.</p>
-              <a href="#cta" class="btn btn--primary story__cta-btn">Book a Session</a>
-            </div>
-
-          </div><!-- /.story__content -->
-
-        </div><!-- /.story__grid -->
-      </div>
-    </section>
-
-    <!-- ============================================================
-         EXPERIENCE SECTION
-    ============================================================ -->
-    <section class="experience" id="experience" aria-label="What We Offer">
-      <div class="experience__inner">
-        <div class="container">
-
-        <div class="experience__header">
-          <h2 class="experience__title">What We Do</h2>
-          <p class="experience__subtitle">Three pillars that define every Euregence session.</p>
+        <!-- Price strip -->
+        <div class="story-cards__price-strip fade-in">
+          <span class="story-cards__price-strip-eyebrow">Science made accessible</span>
+          <div class="story-cards__price-strip-highlight">
+            <span class="story-cards__price-strip-value">&#8377;20</span>
+            <span class="story-cards__price-strip-unit">per student</span>
+          </div>
         </div>
 
-        <div class="experience__cards">
+        <!-- Cards -->
+        <div class="story-cards__grid" role="list">
 
-          <article class="experience-card experience-card--demonstration">
-            <div class="experience-card__icon-wrap" aria-hidden="true">
-              <span class="experience-card__icon">⚡</span>
-            </div>
-            <h3 class="experience-card__heading">Demonstration</h3>
-            <p class="experience-card__text">
-              High-energy science that looks like magic.
-            </p>
+          <article class="sc-card fade-in" role="listitem">
+            <div class="sc-card__num" aria-hidden="true">01</div>
+            <h2 class="sc-card__heading">Who Are We</h2>
+            <p class="sc-card__text">We are the team Euregence. As passionate engineering and science students, we know firsthand that mastering physics and chemistry requires more than just memorizing formulas. We are science communicators dedicated to transforming middle school education by turning abstract concepts into hands-on, unforgettable visual experiences.</p>
           </article>
 
-          <article class="experience-card experience-card--hands-on">
-            <div class="experience-card__icon-wrap" aria-hidden="true">
-              <span class="experience-card__icon">🧪</span>
-            </div>
-            <h3 class="experience-card__heading">Hands-on</h3>
-            <p class="experience-card__text">
-              Every student performs experiments.
-            </p>
+          <article class="sc-card fade-in" role="listitem">
+            <div class="sc-card__num" aria-hidden="true">02</div>
+            <h3 class="sc-card__heading">Why This Idea</h3>
+            <p class="sc-card__text">To a 12-year-old, science shouldn&rsquo;t be a textbook, it should be magic. They should enjoy, visualize, and learn science.</p>
           </article>
 
-          <article class="experience-card experience-card--understanding">
-            <div class="experience-card__icon-wrap" aria-hidden="true">
-              <span class="experience-card__icon">💡</span>
-            </div>
-            <h3 class="experience-card__heading">Understanding</h3>
-            <p class="experience-card__text">
-              Concepts become clear through action.
-            </p>
+          <article class="sc-card fade-in" role="listitem">
+            <div class="sc-card__num" aria-hidden="true">03</div>
+            <h3 class="sc-card__heading">The Problem</h3>
+            <p class="sc-card__text">Students don&rsquo;t like science because they don&rsquo;t understand it. Research shows visual understanding improves learning.</p>
           </article>
 
-        </div>
+          <article class="sc-card fade-in" role="listitem">
+            <div class="sc-card__num" aria-hidden="true">04</div>
+            <h3 class="sc-card__heading">Experience</h3>
+            <p class="sc-card__text">We start with high-energy demonstrations (color changes, safe fire, material science). Then students perform experiments themselves.</p>
+          </article>
 
-        </div><!-- /.container -->
+          <article class="sc-card fade-in" role="listitem">
+            <div class="sc-card__num" aria-hidden="true">05</div>
+            <h3 class="sc-card__heading">Why Better</h3>
+            <p class="sc-card__text">Better and faster understanding at &#8377;20 per student. We create curiosity, not just experiments.</p>
+            <a href="#cta" class="btn btn--primary sc-card__cta">Book a Session</a>
+          </article>
+
+        </div><!-- /.story-cards__grid -->
+
       </div>
     </section>
 
@@ -285,25 +198,25 @@
 
           <div class="why-us__price-block">
             <span class="why-us__price-label">Only</span>
-            <span class="why-us__price">₹20</span>
+            <span class="why-us__price">&#8377;20</span>
             <span class="why-us__price-unit">per student</span>
           </div>
 
           <ul class="why-us__list" role="list">
             <li class="why-us__item">
-              <span class="why-us__item-icon" aria-hidden="true">✓</span>
+              <span class="why-us__item-icon" aria-hidden="true">&#10003;</span>
               <span class="why-us__item-text">Hands-on learning</span>
             </li>
             <li class="why-us__item">
-              <span class="why-us__item-icon" aria-hidden="true">✓</span>
+              <span class="why-us__item-icon" aria-hidden="true">&#10003;</span>
               <span class="why-us__item-text">Visual clarity</span>
             </li>
             <li class="why-us__item">
-              <span class="why-us__item-icon" aria-hidden="true">✓</span>
+              <span class="why-us__item-icon" aria-hidden="true">&#10003;</span>
               <span class="why-us__item-text">Engaging sessions</span>
             </li>
             <li class="why-us__item">
-              <span class="why-us__item-icon" aria-hidden="true">✓</span>
+              <span class="why-us__item-icon" aria-hidden="true">&#10003;</span>
               <span class="why-us__item-text">Affordable pricing</span>
             </li>
           </ul>
